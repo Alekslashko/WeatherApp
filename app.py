@@ -1,3 +1,4 @@
+import streamlit as st
 import requests
 import pandas as pd
 from datetime import datetime
@@ -9,3 +10,5 @@ URL = f"http://api.openweathermap.org/data/2.5/air_pollution?lat={LAT}&lon={LON}
 
 response = requests.get(URL)
 data = response.json()
+
+st.write({weather})
