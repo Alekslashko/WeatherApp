@@ -10,4 +10,4 @@ URL = f"https://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}
 response = requests.get(URL)
 data = response.json()
 
-st.write({data})
+st.write({data["weather"]})
